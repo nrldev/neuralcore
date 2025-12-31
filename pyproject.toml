@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuralcore"
+version = "0.1.0"
+description = "Custom computer vision library based on supervision"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.21.2",
+    "scipy>=1.10.0",
+    "matplotlib>=3.6.0",
+    "pyyaml>=5.3",
+    "defusedxml>=0.7.1",
+    "pillow>=9.4",
+    "requests>=2.26.0",
+    "tqdm>=4.62.3",
+    "opencv-python>=4.5.5.64"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["neuralcore*", "supervision*"]
+
+[tool.setuptools.package-dir]
+"" = "."
+"supervision" = "libs/supervision/supervision"

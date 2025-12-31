@@ -1,0 +1,3 @@
+[submodule "libs/supervision"]
+	path = libs/supervision
+	url = git@github.com:nrldev/supervision.git
